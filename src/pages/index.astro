@@ -1,0 +1,599 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const phone = "(323) 944-1010";
+const phoneTel = "+13239441010";
+const location = "Orange County, CA";
+const nationwide = "Nationwide service";
+---
+
+<BaseLayout title="SHBA | Business Entity Formation">
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="/" aria-label="Safe Harbor Business Associates">
+  <span class="brand-emblem" aria-hidden="true">
+    <img
+      src="/assets/images/logo.png"
+      alt=""
+      class="brand-logo"
+      decoding="async"
+      loading="eager"
+    />
+  </span>
+
+  <span class="brand-text">
+    <span class="brand-name">Safe Harbor Business Associates</span>
+    <span class="brand-sub">Entity Formation Services • Nationwide</span>
+  </span>
+</a>
+
+
+      <nav class="nav" aria-label="Primary">
+        <a class="navlink" href="#services">Services</a>
+        <a class="navlink" href="#pricing">Pricing</a>
+        <a class="navlink" href="#faq">FAQ</a>
+        <a class="navlink" href="#legal">Legal</a>
+      </nav>
+
+      <div class="header-cta">
+        <a class="phone" href={`tel:${phoneTel}`} aria-label={`Call ${phone}`}>{phone}</a>
+        <a class="btn primary" href="#pricing">Packages</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero hero-bg reveal">
+      <div class="container hero-grid">
+        <div class="stack">
+          <p class="kicker">Business entity formation • {location} • {nationwide}</p>
+          <h1>Form your business the right way: structured, filed, and delivered.</h1>
+          <p class="lede">
+            SHBA prepares and submits business entity formation filings nationwide with clear pricing,
+            compliant disclosures, and direct support.
+          </p>
+
+          <div class="cta-row" id="start">
+            <a class="btn primary" href="#pricing">View Packages</a>
+            <a class="btn" href="#contact">Talk to Us</a>
+          </div>
+
+          <ul class="trust-pills" aria-label="Highlights">
+            <li>Transparent packages</li>
+            <li>Nationwide filings</li>
+            <li>Direct phone support</li>
+            <li>Not a law firm</li>
+          </ul>
+
+          <div class="notice subtle" role="note">
+            <strong>Disclosure:</strong> SHBA is a document preparation and filing service and is not a law firm.
+            We do not provide legal advice.
+          </div>
+        </div>
+
+        <aside class="card hero-card" aria-label="Quick start">
+          <h2 class="h3">Quick Start</h2>
+          <p class="small">
+            Choose a package, provide your entity details, and we’ll prepare your filing for submission.
+          </p>
+
+          <div class="mini-steps" aria-label="Process overview">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div>
+                <div class="step-title">Submit details</div>
+                <div class="step-text">Business name, state, owners, contact info.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div>
+                <div class="step-title">We prepare & file</div>
+                <div class="step-text">We format, review, and submit to the state.</div>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div>
+                <div class="step-title">Receive confirmation</div>
+                <div class="step-text">Filed docs delivered digitally.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="divider"></div>
+
+          <p class="small">
+            Prefer to speak first? Call <a href={`tel:${phoneTel}`}>{phone}</a>.
+          </p>
+
+          <a class="btn primary full" href="#pricing">See Pricing</a>
+          <p class="tiny subtle">
+            State filing fees are separate and vary by jurisdiction.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+     <div class="container trust-grid">
+     <div>Nationwide Formation Services</div>
+     <div>Transparent Pricing</div>
+     <div>Document Preparation & Filing</div>
+     <div>Orange County Based</div>
+     </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section reveal" id="services">
+      <div class="container">
+        <div class="section-head">
+          <h2>What we do</h2>
+          <p class="subhead">
+            SHBA forms business entities and prepares standard documentation for delivery. We do not provide legal or tax advice.
+          </p>
+        </div>
+
+        <div class="grid cards-3">
+          <article class="card">
+            <h3>LLC Formation</h3>
+            <p>Preparation and submission of LLC formation filings in your selected state.</p>
+            <ul class="bullets">
+              <li>Articles preparation</li>
+              <li>Name availability check (where applicable)</li>
+              <li>Digital delivery of filed docs</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Corporation Formation</h3>
+            <p>Form C-Corp or S-Corp entities with properly structured filing documents.</p>
+            <ul class="bullets">
+              <li>Incorporation filings</li>
+              <li>Bylaws template (package dependent)</li>
+              <li>Organizational templates</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Nonprofit Incorporation</h3>
+            <p>Prepare and submit nonprofit incorporation filings. Additional steps may be required after state approval.</p>
+            <ul class="bullets">
+              <li>Incorporation filings</li>
+              <li>Template bylaws (package dependent)</li>
+              <li>Compliance checklist</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="grid cards-2 mt">
+          <article class="card">
+            <h3>Add-ons</h3>
+            <ul class="bullets">
+              <li>Registered Agent service (if selected)</li>
+              <li>EIN assistance</li>
+              <li>Operating Agreement / Bylaws templates</li>
+              <li>Expedited filing (where available)</li>
+            </ul>
+            <p class="tiny subtle">Availability varies by state and package.</p>
+          </article>
+
+          <article class="card">
+            <h3>Who this is for</h3>
+            <ul class="bullets">
+              <li>New founders forming an LLC or corporation</li>
+              <li>Operators needing clean documentation</li>
+              <li>Businesses that want transparent, non-retainer support</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="section alt reveal" id="pricing">
+      <div class="container">
+        <div class="section-head">
+          <h2>Pricing</h2>
+          <p class="subhead">
+            Packages mirror standard formation service tiers. State filing fees are separate and vary by jurisdiction.
+          </p>
+        </div>
+
+        <div class="grid pricing-3">
+          <article class="card price">
+            <div class="price-top">
+              <h3>Starter</h3>
+              <div class="tag">Basic filing</div>
+            </div>
+            <div class="amount">
+              <span class="big">$0</span>
+              <span class="small">+ state fees</span>
+            </div>
+            <ul class="checks">
+              <li>Preparation & filing of formation documents</li>
+              <li>Name check (where applicable)</li>
+              <li>Digital delivery of filed documents</li>
+              <li>Email support</li>
+            </ul>
+
+            <button
+              class="btn full js-checkout"
+              type="button"
+              data-package="Starter"
+              data-price="$0 + state fees"
+            >
+              Payments enablement pending
+            </button>
+
+            <p class="tiny subtle">Demo checkout UI only. Payments will be enabled shortly.</p>
+          </article>
+
+          <article class="card price featured">
+            <div class="price-top">
+              <h3>Standard</h3>
+              <div class="tag">Most popular</div>
+            </div>
+            <div class="amount">
+              <span class="big">$199</span>
+              <span class="small">+ state fees</span>
+            </div>
+            <ul class="checks">
+              <li>Everything in Starter</li>
+              <li>Operating Agreement / Bylaws template</li>
+              <li>EIN assistance</li>
+              <li>1 year Registered Agent service</li>
+              <li>Compliance checklist</li>
+            </ul>
+
+            <button
+              class="btn primary full js-checkout"
+              type="button"
+              data-package="Standard"
+              data-price="$199 + state fees"
+            >
+              Payments enablement pending
+            </button>
+
+            <p class="tiny subtle">Demo checkout UI only. Payments will be enabled shortly.</p>
+          </article>
+
+          <article class="card price">
+            <div class="price-top">
+              <h3>Premium</h3>
+              <div class="tag">Expedited</div>
+            </div>
+            <div class="amount">
+              <span class="big">$349</span>
+              <span class="small">+ state fees</span>
+            </div>
+            <ul class="checks">
+              <li>Everything in Standard</li>
+              <li>Expedited filing (where available)</li>
+              <li>Banking resolution template</li>
+              <li>Initial minutes template</li>
+              <li>Priority support</li>
+            </ul>
+
+            <button
+              class="btn full js-checkout"
+              type="button"
+              data-package="Premium"
+              data-price="$349 + state fees"
+            >
+              Payments enablement pending
+            </button>
+
+            <p class="tiny subtle">Demo checkout UI only. Payments will be enabled shortly.</p>
+          </article>
+        </div>
+
+        <div class="notice mt" role="note">
+          <strong>Note:</strong> This page includes a checkout-style modal for demonstration. Payment processing will be enabled after underwriting/processor setup.
+          For immediate next steps, use the contact section below.
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2>FAQ</h2>
+          <p class="subhead">Straight answers. No interpretive dance.</p>
+        </div>
+
+        <div class="accordion" role="region" aria-label="Frequently Asked Questions">
+          <details class="acc">
+            <summary>Are you a law firm?</summary>
+            <div class="acc-body">
+              <p>No. SHBA is not a law firm and does not provide legal advice. If you need legal advice, consult a licensed attorney.</p>
+            </div>
+          </details>
+
+          <details class="acc">
+            <summary>Are state filing fees included?</summary>
+            <div class="acc-body">
+              <p>No. State filing fees are separate and vary by state and entity type. These are paid to the government filing office.</p>
+            </div>
+          </details>
+
+          <details class="acc">
+            <summary>How long does formation take?</summary>
+            <div class="acc-body">
+              <p>Processing times depend on the state. Expedited options may be available in Premium (where the state offers it).</p>
+            </div>
+          </details>
+
+          <details class="acc">
+            <summary>Do you guarantee approval?</summary>
+            <div class="acc-body">
+              <p>No. Approval is determined by the state filing agency. We prepare and submit filings to meet submission requirements, but we do not control state decisions.</p>
+            </div>
+          </details>
+
+          <details class="acc">
+            <summary>Do you provide tax advice?</summary>
+            <div class="acc-body">
+              <p>No. SHBA does not provide tax advice. Please consult a CPA or tax professional regarding elections and tax classification.</p>
+            </div>
+          </details>
+
+          <details class="acc">
+            <summary>Do you service my state?</summary>
+            <div class="acc-body">
+              <p>SHBA services clients nationwide. Availability of expedited processing and certain add-ons varies by state.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section alt" id="contact">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="subhead">Call for questions or to confirm the right package.</p>
+        </div>
+
+        <div class="grid contact-2">
+          <div class="card">
+            <h3>Phone</h3>
+            <p class="lede">
+              <a class="biglink" href={`tel:${phoneTel}`}>{phone}</a>
+            </p>
+            <p class="tiny subtle">If you reach voicemail, leave your name, state, and entity type.</p>
+          </div>
+
+          <div class="card">
+            <h3>Service Area</h3>
+            <p><strong>Based in:</strong> {location}</p>
+            <p><strong>Servicing:</strong> {nationwide}</p>
+            <p class="tiny subtle">
+              State filing rules and processing times vary. We’ll confirm requirements before submission.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEGAL -->
+    <section class="section" id="legal">
+      <div class="container">
+        <div class="section-head">
+          <h2>Legal</h2>
+          <p class="subhead">
+            On-page disclosures, Terms of Service, and Privacy Policy for current operations.
+          </p>
+        </div>
+
+        <div class="grid legal-2">
+          <article class="card legal">
+            <h3>Terms of Service</h3>
+
+            <h4>1. Nature of Services</h4>
+            <p>
+              Safe Harbor Business Associates (“SHBA”) provides document preparation and filing assistance services related to business entity formation.
+              SHBA is not a law firm and does not provide legal, tax, or financial advice.
+            </p>
+
+            <h4>2. No Attorney-Client Relationship</h4>
+            <p>
+              Use of this website or our services does not create an attorney-client relationship.
+              Communications are not protected by attorney-client privilege.
+            </p>
+
+            <h4>3. Fees, State Fees, and Refunds</h4>
+            <p>
+              Service fees cover preparation and filing assistance. Government filing fees are separate and vary by jurisdiction.
+              Once a filing has been submitted to a government agency, associated fees may be non-refundable.
+            </p>
+
+            <h4>4. Processing Times</h4>
+            <p>
+              Processing timelines depend on the state filing agency. Any time estimates are not guarantees.
+              Expedited processing is only available where the state offers it.
+            </p>
+
+            <h4>5. Limitation of Liability</h4>
+            <p>
+              To the maximum extent permitted by law, SHBA’s liability for any claim related to services is limited to the amount paid to SHBA for the service.
+            </p>
+
+            <h4>6. Governing Law</h4>
+            <p>
+              These terms are governed by the laws of the State of California, without regard to conflict of law principles.
+            </p>
+          </article>
+
+          <article class="card legal">
+            <h3>Privacy Policy</h3>
+
+            <h4>1. Information We Collect</h4>
+            <ul class="bullets">
+              <li>Contact information (name, email, phone)</li>
+              <li>Business information (entity type, state, ownership/management details as required)</li>
+              <li>Payment information (processed by a third-party payment processor)</li>
+            </ul>
+
+            <h4>2. How We Use Information</h4>
+            <ul class="bullets">
+              <li>Prepare and submit formation filings</li>
+              <li>Communicate service updates and requests for information</li>
+              <li>Process payments through third-party providers</li>
+            </ul>
+
+            <h4>3. Sharing of Information</h4>
+            <p>
+              We may share information with government filing agencies, registered agent providers (if selected),
+              and payment processors to provide the services requested.
+            </p>
+
+            <h4>4. Data Security</h4>
+            <p>
+              We use reasonable administrative and technical safeguards designed to protect information.
+              No method of transmission or storage is 100% secure.
+            </p>
+
+            <h4>5. No Sale of Personal Information</h4>
+            <p>We do not sell personal information.</p>
+          </article>
+        </div>
+
+        <div class="notice mt" role="note">
+          <strong>Legal Disclosure:</strong> SHBA is a document preparation and filing service and is not a law firm. We do not provide legal advice.
+          If you require legal advice, consult a licensed attorney.
+        </div>
+      </div>
+    </section>
+
+	<script is:inline>
+  // Header shrink on scroll
+  const header = document.querySelector(".site-header");
+
+  function setHeaderState(){
+    const scrolled = window.scrollY > 12;
+    header.classList.toggle("is-scrolled", scrolled);
+  }
+
+  // Run once and on scroll
+  setHeaderState();
+  window.addEventListener("scroll", setHeaderState, { passive: true });
+</script>
+
+    <!-- CHECKOUT MODAL (Placeholder) -->
+    <div class="modal-backdrop" id="checkoutModal" aria-hidden="true">
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal-head">
+          <h3 id="modalTitle">Checkout</h3>
+          <button class="iconbtn" type="button" id="closeModal" aria-label="Close">✕</button>
+        </div>
+
+        <p class="small subtle" id="modalPackageLine"></p>
+
+        <div class="notice">
+          <strong>Payments enablement pending.</strong>
+          <div class="tiny subtle" style="margin-top:6px;">
+            This is a demonstration build. Payment processing will be enabled after processor setup.
+            To proceed now, request setup or call us directly.
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <a class="btn primary" href="#contact">Request Setup</a>
+          <a class="btn" href={`tel:${phoneTel}`}>{phone}</a>
+        </div>
+
+        <p class="tiny subtle" style="margin-top:10px;">
+          State filing fees are separate and vary by jurisdiction. SHBA is not a law firm and does not provide legal advice.
+        </p>
+      </div>
+    </div>
+
+<script is:inline>
+  // Scroll reveal (lightweight, no dependencies)
+  const revealEls = Array.from(document.querySelectorAll(".reveal"));
+
+  // If IntersectionObserver isn't supported (rare), just show everything.
+  if (!("IntersectionObserver" in window)) {
+    revealEls.forEach(el => el.classList.add("is-visible"));
+  } else {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach(el => io.observe(el));
+  }
+</script>
+
+    <script is:inline>
+  const modal = document.getElementById("checkoutModal");
+  const closeBtn = document.getElementById("closeModal");
+  const line = document.getElementById("modalPackageLine");
+
+  function openModal(pkg, price){
+    line.textContent = `Selected: ${pkg} (${price})`;
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+    closeBtn.focus();
+  }
+
+  function closeModal(){
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+  }
+
+  document.querySelectorAll(".js-checkout").forEach(btn => {
+    btn.addEventListener("click", () => {
+      openModal(btn.dataset.package, btn.dataset.price);
+    });
+  });
+
+  closeBtn.addEventListener("click", closeModal);
+
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) closeModal();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (modal.classList.contains("is-open") && e.key === "Escape") closeModal();
+  });
+</script>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-title">Safe Harbor Business Associates</div>
+        <p class="tiny subtle">{location} • {nationwide}</p>
+        <p class="tiny subtle">
+          Phone: <a href={`tel:${phoneTel}`}>{phone}</a>
+        </p>
+      </div>
+
+      <div class="footer-links" aria-label="Footer links">
+        <a href="#services">Services</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#legal">Terms & Privacy</a>
+      </div>
+
+      <div class="footer-disclosure">
+        <p class="tiny subtle">
+          SHBA is not a law firm and does not provide legal advice. Communications are not protected by attorney-client privilege.
+          State processing times and requirements vary.
+        </p>
+      </div>
+    </div>
+  </footer>
+</BaseLayout>

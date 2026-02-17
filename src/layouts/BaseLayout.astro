@@ -1,0 +1,32 @@
+---
+import "../styles/global.css";
+
+const {
+  title = "Safe Harbor Business Associates (SHBA)",
+  description = "Safe Harbor Business Associates (SHBA) provides business entity formation services nationwide. Transparent packages, compliant disclosures, and direct support.",
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta property="og:image" content="/assets/images/og-preview.jpg" />
+    <meta name="twitter:image" content="/assets/images/og-preview.jpg" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+
+    <title>{title}</title>
+
+    <!-- Basic social previews (safe defaults for demo) -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <slot />
+  </body>
+</html>
